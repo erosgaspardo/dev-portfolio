@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             duration: 0.5, // Shorten the duration to make it faster
             autoAlpha: 0, // Fade out the preloader
             onComplete: () => {
-                document.querySelector("#preloader").style.display = "none"; // Hide the preloader after animation
+/*                 document.querySelector("#preloader").style.display = "none"; // Hide the preloader after animation */
             }
         });
     };
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     // Add preloader, then run the main animation depending on the screen size
     master
-        .add(preloadAnimation())
+/*         .add(preloadAnimation()) */
         .add(setInitialStates(), '-=1.2') // Slight overlap for faster transition
         .add(isMobile ? mobileAnimation() : desktopAnimation(), '-=1.2') // Overlap start to minimize delay
         .add(UIAnimation(), '-=1.2'); // Start UI animation slightly earlier for quicker flow
