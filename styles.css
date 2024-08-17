@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url("/assets/font/BDOGrotesk.woff2") format("woff2");
+}
+
+body {
+  font-family: "BDOGrotesk";
+  padding: 1em;
+  background-color: #0d0e0e;
+}
+
+h1 {
+  font-size: 1em;
+  color: rgb(164, 164, 164);
+  font-weight: 400;
+  overflow: hidden;
+}
+
+p,
+li,
+a {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+}
+
+p {
+  overflow: hidden;
+}
+
+a:hover {
+  background-color: rgb(164, 164, 164);
+  color: black;
+}
+
+/* underline hover effetct
+
+a {
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: rgb(100, 100, 100);
+    transition: width .2s;
+}
+
+a:hover::after {
+    width: 100%;
+} */
+
+main {
+  display: grid;
+  gap: 2em;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid2 {
+  display: grid;
+  gap: 2em;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: end;
+  align-items: start;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1em;
+  width: 97vw;
+}
+
+.career-years,
+.project-years {
+  text-align: end;
+}
+
+#career-content,
+#projects-content {
+  text-align: center;
+}
+
+.copyright span,
+.socials span,
+.contact span,
+.career span,
+.projects span,
+#career-content span,
+#projects-content span,
+.career-years span,
+.project-years span {
+  display: block;
+}
+
+.copyright,
+.socials,
+.contact,
+.career,
+.projects,
+#career-content,
+#projects-content {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+
+  .grid2 {
+    display: block;
+  }
+
+  .career-years,
+  .project-years,
+  .career,
+  #career-content {
+    display: none;
+  }
+
+  #projects-content {
+    text-align: left;
+  }
+
+}
