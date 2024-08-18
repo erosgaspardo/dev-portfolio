@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 
         const tl = gsap.timeline();
-        tl.from("#profile-pic", { delay: 0.3, duration: 1, autoAlpha: 0 }) 
-          .from("main", { delay: 0.2, duration: 0.5, opacity: 0 }) 
-          .to("#profile-pic", { duration: 0.4, autoAlpha: 0 });
+        tl.from("#profile-pic", { delay: 0.3, duration: 2, autoAlpha: 0 }) 
+          .from("main", { delay: 0.7, duration: 0.5, opacity: 0 }) 
+          .to("#profile-pic", { duration: 1.3, autoAlpha: 0 });
         return tl;
     };
 
