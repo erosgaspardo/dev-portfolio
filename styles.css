@@ -115,11 +115,14 @@ main {
 .career span,
 .projects span,
 #career-content span,
-#projects-content span,
+#projects-content span {
+  display: block;
+  width: max-content;
+}
+
 .career-years span,
 .project-years span {
   display: block;
-  width: max-content;
 }
 
 .copyright,
