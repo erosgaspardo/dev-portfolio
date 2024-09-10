@@ -58,26 +58,6 @@ a:hover:before {
   transform: scaleX(1);
 }
 
-/* underline hover effetct
-
-a {
-    position: relative;
-}
-
-a::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    background: rgb(100, 100, 100);
-    transition: width .2s;
-}
-
-a:hover::after {
-    width: 100%;
-} */
 
 main {
   display: grid;
