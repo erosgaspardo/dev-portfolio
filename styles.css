@@ -33,11 +33,7 @@ a {
 p {
   overflow: hidden;
 }
-/* 
-a:hover {
-  background-color: rgb(164, 164, 164);
-  color: black;
-} */
+
 
 a:before {
   content: '';
