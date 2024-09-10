@@ -80,14 +80,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
             top: "50%",
             left: "50%",
             xPercent: -50,
-            yPercent: -30,
-            scale: .6
+            yPercent: -50,
+            scale: .2
         });
 
         const tl = gsap.timeline();
         tl.from("#profile-pic", { delay: 0.3, duration: 2, autoAlpha: 0 }) 
           .from("main", { delay: 0.7, duration: 0.5, opacity: 0 }) 
-          .to("#profile-pic", { duration: 1.3, autoAlpha: 0 });
+          .to("#profile-pic", { duration: 1.3,
+            top: "calc(0% + 1em)",  // Move to top
+            left: "calc(100% - 1em)", // Move to the right
+            xPercent: -60,  // Align with right edge
+            yPercent: -41,     // Align with top edge
+            ease: "power4.inOut" });
         return tl;
     };
 
